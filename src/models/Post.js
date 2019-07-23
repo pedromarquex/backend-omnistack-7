@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+/* Um model deve exportar uma instância de Schema */
+
 const PostSchema = new mongoose.Schema({
     author: String,
     place: String,
@@ -10,7 +12,8 @@ const PostSchema = new mongoose.Schema({
         type: Number,
         default: 0,
     }
-}, {
+},
+    {
         timestamps: true,
     });
 
